@@ -24,7 +24,6 @@ import {
 import {
   Colors,
   DebugInstructions,
-  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
@@ -70,7 +69,9 @@ const App = () => {
       <ScrollView
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
-        <Header />
+        <View>
+          <Text>Ola ke ase</Text>
+        </View>
         <View
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -116,6 +117,8 @@ const styles = StyleSheet.create({
 
 const codePushOptions = {
   checkFrequency: CodePush.InstallMode.IMMEDIATE,
+  updateDialog: true,
+  deploymentKey: 'bGERVr7CFPNFJxJFUquoXY6-gPxXPOWHorsng',
 };
 
 export default CodePush(codePushOptions)(App);
