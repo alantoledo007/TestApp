@@ -8,7 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "cp:js": "appcenter codepush deployment clear -a alantoledo007/TestApp Staging -t 1.0"
+    "cp": "appcenter codepush release-react -a alantoledo007/TestApp -d Staging -k private.pem -m -o ./ -t 1.0"
   },
   "dependencies": {
     "appcenter": "4.3.0",
