@@ -24,6 +24,7 @@ import {
 import {
   Colors,
   DebugInstructions,
+  Header,
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
@@ -70,7 +71,7 @@ const App = () => {
         contentInsetAdjustmentBehavior="automatic"
         style={backgroundStyle}>
         <View>
-          <Text>With native change</Text>
+          <Header />
         </View>
         <View
           style={{
